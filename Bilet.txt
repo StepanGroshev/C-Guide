@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+    int ages[5];
+ 
+    for (int i = 0; i < 5; ++i) {
+        cin >> ages[i];
+    }
+    double sum;
+    int min=0;
+    for(int j=5;j >0; j-- )
+    for (int i = 0; i < 5; ++i) {
+    if ( ages [i]< ages [i+1]){
+        min= ages[i];
+        
+       ages [i] =ages [i+1];
+       ages [i+1] = min ;
+    }
+    }
+    
+     for (int i = 0; i < 5; ++i)
+    sum=50.0-(50.0/100.0* ages[4]);
+    cout<< sum ;
+    
+    return 0;
+}

@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main () { 
+// your code 
+int a, b, c, d; 
+cin >> a; 
+b = 50 - (a - = 50); 
+c = 50 - (b - = 50); 
+d = 50 - (c% = 50); 
+cout << d << endl; 
+return 0; 
+}
